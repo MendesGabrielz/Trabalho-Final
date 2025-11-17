@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+.secao-dois {}
+
+.secao-dois-destaques {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+}
+
+.elementos {
+
+    display: flex;
+    justify-content: center;
+    gap: 11rem;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.elementos-filho {
+
+    width: 12rem;
+}
+
+.img-elementos {
+
+    width: 5.625rem;
+}
+
+.container-secao-dois {
+
+    background-image: url(img/satelite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 41rem;
+}
+
+.secao-dois-conquistas {
+
+    margin-left: 6rem;
+    width: 66rem;
+    text-align: justify;
+
+
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+
+}
+
+.titulo-depoimentos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 6rem;
+    background: #000;
+    position: relative;
+}
+
+.grid-filho {
+
+    display: flex;
+    flex-direction: column;
+
+
+    border: 1px solid black;
+    border-left: 18px solid white;
+    border-radius: 4%;
+
+
+    width: 33rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
