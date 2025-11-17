@@ -1,11 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=Raleway:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap');
+
+
+html {
+
+    scroll-behavior: smooth;
+}
 
 body {
 
-    background-color: black;
-    color: white;
     margin: 0px;
+    background-color: light-dark(black, white);
+    color: light-dark(white, black);
+}
+
+.primeira-secao {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0) 60%),
+        url(img/foguetelançando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-geral-primeira {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 30px;
+}
+
+.conteudo-primeira-secao {
+
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 20px;
+    }
+
+    a {
+
+        color: inherit;
+        text-decoration: none;
+
+    }
+}
+
+.logo-primeira-secao {
+
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.conteudo-direita-primeira-secao {
+
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-right: 2.5rem;
+
+    h1 {
+
+        font-family: "Exo 2", sans-serif;
+        font-size: 1.25rem;
+    }
+
+    a {
+
+        color: inherit;
+        text-decoration: none;
+
+    }
+}
+
+.traco {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+.container-titulos {
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-textos-secao-dois {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    gap: 1.25rem;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+#Titulo-Explorando {
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+
+#Sub-Titulo-AstroLink {
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2.25rem;
+    width: 66rem;
+}
+
+.container-blocos-secao-um {
+
+    display: flex;
+    justify-content: center;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+}
+
+.titulos-bloco {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+
+}
+
+.textinhos-bloco {
+
+    border: 1px solid rgba(182, 182, 182, 0.5);
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 20px;
+    padding: 0.500rem;
+}
+
+.container-blocos-secao-dois {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    h1,
+    h2,
+    h3 {
+
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+    }
+
+    p {
+
+        font-family: "Raleway", sans-serif;
+        font-size: 1.25rem;
+    }
+}
+
+.titulos-bloco-dois {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 16.2rem;
+
+}
+
+.nossa-visao,
+.nossa-missao {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(182, 182, 182, 0.5);
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 20px;
+    padding: 3rem;
+    width: 400PX;
 }
 
 .secao-dois {}
@@ -15,6 +220,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 
     h1 {
 
@@ -54,11 +260,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 41rem;
+    height: 42rem;
 }
 
 .secao-dois-conquistas {
 
+    padding-top: 2rem;
     margin-left: 6rem;
     width: 66rem;
     text-align: justify;
@@ -107,9 +314,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 2rem;
+    margin-bottom: 4rem;
     gap: 6rem;
     background: #000;
     position: relative;
+
 }
 
 .grid-filho {
@@ -126,4 +335,68 @@ body {
     width: 33rem;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+
+.secao-tres {
+
+    background-color: #090909;
+    height: 250px;
+
+}
+
+.tudo-footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 4rem;
+    overflow: hidden;
+
+}
+
+.container-logos-footer {
+
+    margin-left: 4rem;
+    justify-items: center;
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    p {
+
+        Font-family: "Raleway", sans-serif;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    a {
+
+        color: inherit;
+
+    }
+}
+
+.container-astrolink-footer {
+
+    display: flex;
+    flex-direction: end;
+    margin-right: 4rem;
+    align-items: center;
+
+}
+
+.logo-footer {
+
+    width: 380px;
+}
+
+.Retangulo-footer {
+
+
+    height: 150px;
 }

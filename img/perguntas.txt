@@ -1,0 +1,67 @@
+1. Explique a principal diferença conceitual e de uso entre o comando su e o comando sudo em um sistema Linux. Qual dos dois comandos é considerado a melhor prática de segurança em ambientes modernos e por quê?
+
+2. Descreva o papel de cada um dos quatro arquivos principais localizados no diretório /etc que são essenciais para o gerenciamento de contas e segurança no Linux.
+
+3. Classifique e diferencie as três principais categorias de contas de usuário (Superusuário, Usuário Padrão e Contas de Sistema/Serviço) com base em seus atributos principais: UID, Diretório Inicial e Shell de Login.
+
+4. Qual é a finalidade do diretório de esqueleto (/etc/skel) no gerenciamento de usuários? Forneça um exemplo prático de como um administrador de sistema pode usar esse diretório para padronizar as novas contas de usuário.
+
+5. Qual é o identificador numérico (UID) que é reservado exclusivamente para a conta do Superusuário (root) em sistemas Linux?
+a) 1000.
+b) 500.
+c) 0.
+d) 99.
+
+6. Em que arquivo do sistema Linux estão armazenadas as senhas dos usuários em um formato criptografado (hash), sendo ele acessível apenas pelo root por razões de segurança?
+a) /etc/passwd.
+b) /etc/group.
+c) /etc/shadow.
+d) /etc/sudoers.
+
+7. Qual dos campos a seguir no arquivo /etc/passwd é tipicamente representado pela letra x, indicando que a senha real do usuário foi movida para um arquivo mais seguro?
+a) GECOS.
+b) PASSWORD.
+c) UID.
+d) SHELLNAME.
+
+8. Ao usar o comando useradd, qual é o procedimento padrão do Linux em relação ao grupo primário do novo usuário?
+a) O usuário é adicionado ao grupo users por padrão.
+b) O usuário deve ser adicionado manualmente a um grupo existente, ou ele se tornará  do grupo “guest” por padrão.
+c) O usuário tem seu GID primário definido como 0.
+d) É criado um grupo com o mesmo nome do usuário, e este se torna seu grupo primário.
+
+9. Um usuário está tentando executar um comando administrativo e vê um erro de "Permissão negada". Qual comando ele deve usar, digitando sua própria senha, para executar a tarefa com privilégios elevados, se estiver devidamente autorizado?
+a) su -
+b) chsh
+c) sudo
+d) id
+
+10. Se o arquivo /etc/passwd de um usuário exibe /sbin/nologin como seu shell de login, o que isso indica sobre a conta?
+a) O usuário é um membro do grupo root.
+b) O usuário tem privilégios de administrador.
+c) A conta não pode abrir um shell interativo (é usada principalmente para serviços).
+d) O shell padrão é o Bourne Again Shell (bash), visto ele ser o único homologado no padrão POSIX.
+
+11. Qual comando deve ser usado por um usuário comum na linha de comando para descobrir seu próprio UID, GID primário e grupos secundários dos quais é membro?
+a) last
+b) su
+c) id
+d) passwd
+
+12. Qual é o GID (Identificador de Grupo) padrão associado ao grupo do Superusuário (root)?
+a) 1000.
+b) 500.
+c) 0.
+d) 100.
+
+13. Qual comando é usado pelo administrador do sistema (com autoridade de root) para remover uma conta de usuário e, ao mesmo tempo, excluir seu diretório inicial e todo o seu conteúdo?
+a) userdel
+b) userdel -r
+c) groupdel
+d) passwd -r
+
+14. Onde o sistema Linux armazena as configurações de quais usuários têm permissão para usar o comando sudo e quais comandos podem executar?
+a) /etc/shadow.
+b) /etc/gshadow.
+c) /etc/sudoers.
+d) /home/sudo.
