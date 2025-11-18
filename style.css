@@ -85,21 +85,106 @@ body {
     }
 }
 
-.traco {
+.menu-header{
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
 
-    h1,
-    h2,
-    h3 {
+.menu-header-lateral{
 
-        font-family: "Exo 2", sans-serif;
-        margin: 0px;
+    margin-top: 40px;
+    img{
+
+        width: 40px;
     }
 }
+
+nav ul {
+    width: 100%;
+    list-style: none;
+
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 0px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    flex-direction: column;
+  
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 1000;
+  
+}
+
+.sidebar.active {
+    transform: translateX(0);
+  
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.icon-open,
+.icon-close {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    img{
+
+        width: 40px;
+    }
+}
+
+.menu-button {
+   
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
 
 .container-titulos {
 
@@ -113,7 +198,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
     margin-bottom: 6rem;
     text-align: center;
     gap: 1.25rem;
@@ -158,6 +242,12 @@ body {
     display: flex;
     justify-content: space-around;
     gap: 20rem;
+
+    a {
+
+        color: inherit;
+        text-decoration: none;
+    }
 
 }
 
@@ -260,7 +350,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 42rem;
+    position: fixed;
+    height: 44rem;
 }
 
 .secao-dois-conquistas {
