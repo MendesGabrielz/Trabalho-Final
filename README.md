@@ -6,6 +6,7 @@ AstroLink é uma plataforma fictícia que simula o ambiente de uma agência espa
 
 # FIGMA
 Toda a diagramação e base do projeto está contida em dois links do figma:
+
 https://www.figma.com/design/DKPfpUvSGowktIE3pAWeO8/Astrolink?node-id=0-1&t=oakdeX9AplWL4psE-1
 
 https://www.figma.com/design/3Zkp3R58aMR3UIQmDm3Dh9/Untitled?node-id=0-1&t=e4gpQ6Q3oZDICdM7-1
